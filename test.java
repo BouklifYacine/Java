@@ -1,18 +1,22 @@
+import java.util.Scanner;
+
 class test {
     public static void main(String[] args) {
 
-        double age = 2.5;
-        int ageentier = 35;
-        char grade = 'A';
-        boolean jeSuisMajeur = true;
+        Scanner scanner = new Scanner(System.in);
 
-        if(jeSuisMajeur) {
-            System.out.println("Tu es majeur");
-        }
+        System.out.println("Entrez votre nom : ");
+        String name = scanner.nextLine();
+        System.out.println("Entrez votre age : ");
+        int age = scanner.nextInt();
+        System.out.println("Entrez votre temps de permis : ");
+        double permis = scanner.nextDouble();
+        System.out.println("Bonjour " + name );
+        System.out.println("Tu as " + age + "ans" );
+        System.out.println("Tu as " + permis + "ans de permis" );
 
-        System.out.println(age);
-        System.out.println(ageentier);
-        System.out.println(grade);
-        System.out.println(jeSuisMajeur);
+
+        scanner.close();
+
     }
 }
