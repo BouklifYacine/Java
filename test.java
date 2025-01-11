@@ -5,16 +5,23 @@ class test {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Entrez votre nom : ");
-        String name = scanner.nextLine();
-        System.out.println("Entrez votre age : ");
-        int age = scanner.nextInt();
-        System.out.println("Entrez votre temps de permis : ");
-        double permis = scanner.nextDouble();
-        System.out.println("Bonjour " + name );
-        System.out.println("Tu as " + age + "ans" );
-        System.out.println("Tu as " + permis + "ans de permis" );
+     System.out.println("Rentrez votre budget ");
 
+     int budget = scanner.nextInt();
+
+     System.out.println("Une pizza coute 10e rentrez le nombre de pizza que vous voulez ");
+
+     int pizza = scanner.nextInt();
+
+     int total = pizza * pizza; 
+
+     if(total >= budget){
+        System.out.println("Vous n'avez pas assez d'argent ");
+     }
+
+     else {System.out.print("Bonne appétit");}
+
+    
 
         scanner.close();
 
