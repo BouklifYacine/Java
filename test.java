@@ -1,44 +1,15 @@
 import java.util.Scanner;
+import java.util.Random;
 
 class test {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
-     System.out.println("Rentrez un mot");
-    
-     String isempty = scanner.nextLine();
+        int nombre = random.nextInt(1,11);
 
-     if(isempty.isEmpty()){
-        System.out.println("La chaine est vide ");
-     }
-     else {System.out.println(isempty);}
-
-     System.out.println("Rentrez votre budget ");
-
-     int budget = scanner.nextInt();
-
-     System.out.println("Quel est le montant d'une pizza?  ");
-
-     int pizza = scanner.nextInt();
-
-     System.out.println("Vous en voulez combien?  ");
-
-     int quantite = scanner.nextInt();
-     
-     int total = pizza * quantite;
-
-     int prixrestant = total - budget;
-
-     if(total > budget){
-        System.out.println("Vous n'avez pas assez d'argent il vous manque :  " + prixrestant + " " + "euros" );
-     }
-
-     else {System.out.print("Cela vous coute " + total + " euros" + " ." + " Bonne appétit");}
-
-        scanner.close();
-
-    }
+        System.out.println(nombre);
+      
 
 
-}
+}}
