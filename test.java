@@ -5,6 +5,15 @@ class test {
 
         Scanner scanner = new Scanner(System.in);
 
+     System.out.println("Rentrez un mot");
+    
+     String isempty = scanner.nextLine();
+
+     if(isempty.isEmpty()){
+        System.out.println("La chaine est vide ");
+     }
+     else {System.out.println(isempty);}
+
      System.out.println("Rentrez votre budget ");
 
      int budget = scanner.nextInt();
